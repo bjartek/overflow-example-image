@@ -3,4 +3,4 @@ version: "3.1"
 
 services:
   example:
-    image: ghcr.io/bjartek/overflow-example-image:latest
+    image: ghcr.io/bjartek/overflow-example-image:v0.3.0
