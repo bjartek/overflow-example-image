@@ -9,8 +9,6 @@ builds:
       - CGO_ENABLED=1
       - CC_linux_amd64=x86_64-linux-gnu-gcc
       - CXX_linux_amd64=x86_64-linux-gnu-g++
-      - 'CC={{ index .Env (print "CC_" .Os "_" .Arch) }}'
-      - 'CXX={{ index .Env (print "CXX_" .Os "_" .Arch) }}'
     goos:
       - linux
     goarch:
