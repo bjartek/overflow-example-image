@@ -22,6 +22,9 @@ jobs:
         with:
           fetch-depth: 0 # this is important, otherwise it won't checkout the full tree (i.e. no previous tags)
       - uses: actions/setup-go@v5
+        with:
+          go-version: 1.20
+      - uses: sigstore/cosign-installer@v3.3.0 # installs cosign
       - uses: ko-build/setup-ko@v0.6
       - uses: goreleaser/goreleaser-action@v4 # run goreleaser
         with:
