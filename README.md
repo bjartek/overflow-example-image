@@ -11,6 +11,9 @@ Github actions will trigger on a tag pushed and build a new image an publis it.
 
 ## Error with ko
 
+My example is derived from the example here
+https://goreleaser.com/customization/ko/#example
+
 When using ko in goreleaser with an image built with CGO_ENABLED=1 (in main branch) i do not get a working image.
 
 ```
