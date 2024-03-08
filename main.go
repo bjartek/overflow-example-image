@@ -2,6 +2,7 @@ package main
 
 import (
 	"embed"
+	"fmt"
 
 	"github.com/bjartek/overflow"
 )
@@ -11,6 +12,7 @@ import (
 var filesystem embed.FS
 
 func main() {
+	fmt.Println("foo")
 	o := overflow.Overflow(
 		overflow.WithNetwork("mainnet"),
 		overflow.WithBasePath(""),
