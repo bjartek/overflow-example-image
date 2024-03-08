@@ -225,3 +225,5 @@ require (
 	mvdan.cc/gofumpt v0.4.0 // indirect
 	rsc.io/tmplfunc v0.0.3 // indirect
 )
+
+replace github.com/onflow/crypto => github.com/onflow/crypto v0.24.9
