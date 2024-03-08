@@ -4,7 +4,6 @@ before:
     - go mod tidy
 builds:
   - env:
-      - CGO_ENABLED=1
       - CGO_CFLAGS=-O2 -D__BLST_PORTABLE__
       - CGO_ENABLED=1
       - CC_linux_amd64=x86_64-linux-gnu-gcc
