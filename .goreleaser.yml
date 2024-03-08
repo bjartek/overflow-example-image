@@ -27,7 +27,10 @@ kos:
       - "{{.Version}}"
       - latest
     bare: true
-    base_image: gcr.io/distroless/base-debian12:debug
+    base_image: gcr.io/distroless/base-debian12:latest
     preserve_import_paths: false
     platforms:
       - linux/amd64
+
+docker_signs:
+  - artifacts: manifests
