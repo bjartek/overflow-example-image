@@ -6,8 +6,8 @@ builds:
   - env:
       - CGO_CFLAGS=-O2 -D__BLST_PORTABLE__
       - CGO_ENABLED=1
-      - CC_linux_amd64=x86_64-linux-gnu-gcc
-      - CXX_linux_amd64=x86_64-linux-gnu-g++
+      - CC=x86_64-linux-gnu-gcc
+      - CXX=x86_64-linux-gnu-g++
     goos:
       - linux
     goarch:
@@ -31,6 +31,3 @@ kos:
     preserve_import_paths: false
     platforms:
       - linux/amd64
-
-docker_signs:
-  - artifacts: manifests
